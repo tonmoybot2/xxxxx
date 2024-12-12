@@ -13,9 +13,9 @@ module.exports.config = {
 
 module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
 	var { threadID, messageID } = event;
-	if (event.body.indexOf("I love you")==0 || (event.body.indexOf("i love you")==0 || (event.body.indexOf("I love u")==0 || (event.body.indexOf("I love you")==0)))) {
+	if (event.body.indexOf("Tonmoy")==0 || (event.body.indexOf("তন্ময়")==0 || (event.body.indexOf("Tonmoy Choudhury")==0 || (event.body.indexOf("@Tonmoy Choudhury")==0)))) {
 		var msg = {
-				body: "Hmm... বস নয়নও তোমাকে ভালোবাসে😇😻 :))"
+				body: "আসসালামু আলাইকুম এই যে জান তুমি কি হচ্ছে আমার বস তন্ময় কে ডাকছো? সে তো এখন ব্যস্ত আছে যদি কিছু বলার থাকে বসের ইনবক্সে নক করে রাখো fb https://www.facebook.com/tonmoy221?mibextid=ZbWKwL 😇😻 :))"
     }
 			api.sendMessage(msg, threadID, messageID);
 		}
